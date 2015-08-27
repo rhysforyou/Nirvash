@@ -13,12 +13,12 @@ import Nimble
 import ReactiveAPIClient
 
 class ReactiveAPISpec : QuickSpec {
-    let provider = ReactiveAPIProvider<PollsAPI>()
+    let provider = APIProvider<Polls>()
     
     override func spec() {
         describe("GET /") {
             it("returns the expected sample data") {
-                let response = PollsAPI.Root.sampleData
+                let response = Polls.Root.sampleData
                 let request = self.provider.request(.Root).map { data, response in return data }
                 
                 request.start(next: { value in

@@ -10,7 +10,7 @@ import Foundation
 import ReactiveAPIClient
 
 // See http://docs.pollsapi.apiary.io/
-public enum PollsAPI {
+public enum Polls {
     case Root
     case Question(questionID: Int)
     case Choice(questionID: Int, choiceID: Int)
@@ -18,7 +18,7 @@ public enum PollsAPI {
     case CreateQuestion(question: String, choices: [String])
 }
 
-extension PollsAPI : ReactiveAPITarget {
+extension Polls : APITarget {
     public var baseURL: NSURL { return NSURL(string: "https://polls.apiblueprint.org")! }
     
     public var path: String {
@@ -36,7 +36,7 @@ extension PollsAPI : ReactiveAPITarget {
         }
     }
     
-    public var method: ReactiveAPI.Method {
+    public var method: ReactiveAPIClient.Method {
         switch self {
         case .Root:
             return .GET

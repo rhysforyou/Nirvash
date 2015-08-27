@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "579EB4FC1B77783900BB6267"
+               BlueprintIdentifier = "570BDB621B8EFBDE008884D5"
                BuildableName = "ReactiveAPIClient.framework"
-               BlueprintName = "ReactiveAPIClient"
+               BlueprintName = "ReactiveAPIClient-Mac"
                ReferencedContainer = "container:ReactiveAPIClient.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "579EB5061B77783900BB6267"
-               BuildableName = "ReactiveAPIClientTests.xctest"
-               BlueprintName = "ReactiveAPIClientTests"
+               BlueprintIdentifier = "570BDB6B1B8EFBDE008884D5"
+               BuildableName = "ReactiveAPIClient-MacTests.xctest"
+               BlueprintName = "ReactiveAPIClient-MacTests"
                ReferencedContainer = "container:ReactiveAPIClient.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "579EB4FC1B77783900BB6267"
+            BlueprintIdentifier = "570BDB621B8EFBDE008884D5"
             BuildableName = "ReactiveAPIClient.framework"
-            BlueprintName = "ReactiveAPIClient"
+            BlueprintName = "ReactiveAPIClient-Mac"
             ReferencedContainer = "container:ReactiveAPIClient.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "579EB4FC1B77783900BB6267"
+            BlueprintIdentifier = "570BDB621B8EFBDE008884D5"
             BuildableName = "ReactiveAPIClient.framework"
-            BlueprintName = "ReactiveAPIClient"
+            BlueprintName = "ReactiveAPIClient-Mac"
             ReferencedContainer = "container:ReactiveAPIClient.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "579EB4FC1B77783900BB6267"
+            BlueprintIdentifier = "570BDB621B8EFBDE008884D5"
             BuildableName = "ReactiveAPIClient.framework"
-            BlueprintName = "ReactiveAPIClient"
+            BlueprintName = "ReactiveAPIClient-Mac"
             ReferencedContainer = "container:ReactiveAPIClient.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

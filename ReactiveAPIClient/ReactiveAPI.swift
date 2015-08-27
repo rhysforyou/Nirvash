@@ -11,7 +11,7 @@ import Alamofire
 import ReactiveCocoa
 
 /// Solely used for namespacing
-public struct ReactiveAPI {
+public struct ReactiveAPIClient {
     
     /// HTTP Methods
     public enum Method {
@@ -63,19 +63,19 @@ public struct ReactiveAPI {
     }
 }
 
-public protocol ReactiveAPITarget {
+public protocol APITarget {
     var baseURL: NSURL { get }
     var path: String { get }
-    var method: ReactiveAPI.Method { get }
+    var method: ReactiveAPIClient.Method { get }
     var parameters: [String: AnyObject]? { get }
     var sampleData: NSData { get }
 }
 
-public struct ReactiveAPIEndpoint<T> {
+public struct APIEndpoint<T> {
     public let URL: String
-    public let method: ReactiveAPI.Method
+    public let method: ReactiveAPIClient.Method
     public let parameters: [String: AnyObject]?
-    public let parameterEncoding: ReactiveAPI.ParameterEncoding
+    public let parameterEncoding: ReactiveAPIClient.ParameterEncoding
     public let httpHeaderFields: [String: String]?
     
     public var urlRequest: NSURLRequest {
@@ -86,14 +86,14 @@ public struct ReactiveAPIEndpoint<T> {
     }
 }
 
-public class ReactiveAPIProvider<T : ReactiveAPITarget> {
-    public typealias ReactiveAPIEndpointClosure = (T) -> (ReactiveAPIEndpoint<T>)
-    public typealias ReactiveAPIEndpointResolution = (endpoint: ReactiveAPIEndpoint<T>) -> (NSURLRequest)
+public class APIProvider<T : APITarget> {
+    public typealias ReactiveAPIEndpointClosure = (T) -> (APIEndpoint<T>)
+    public typealias ReactiveAPIEndpointResolution = (endpoint: APIEndpoint<T>) -> (NSURLRequest)
     
     public let endpointClosure: ReactiveAPIEndpointClosure
     public let endpointResolver: ReactiveAPIEndpointResolution
     
-    public init(endpointClosure: ReactiveAPIEndpointClosure = ReactiveAPIProvider.DefaultEndpointMapping, endpointResolver: ReactiveAPIEndpointResolution = ReactiveAPIProvider.DefaultEndpointResolution) {
+    public init(endpointClosure: ReactiveAPIEndpointClosure = APIProvider.DefaultEndpointMapping, endpointResolver: ReactiveAPIEndpointResolution = APIProvider.DefaultEndpointResolution) {
         self.endpointClosure = endpointClosure
         self.endpointResolver = endpointResolver
     }
@@ -107,12 +107,12 @@ public class ReactiveAPIProvider<T : ReactiveAPITarget> {
             }
     }
     
-    public class func DefaultEndpointMapping(target: T) -> ReactiveAPIEndpoint<T> {
+    public class func DefaultEndpointMapping(target: T) -> APIEndpoint<T> {
         let url = target.baseURL.URLByAppendingPathComponent(target.path).absoluteString
-        return ReactiveAPIEndpoint(URL: url, method: target.method, parameters: target.parameters, parameterEncoding: ReactiveAPI.ParameterEncoding.URL, httpHeaderFields: nil)
+        return APIEndpoint(URL: url, method: target.method, parameters: target.parameters, parameterEncoding: ReactiveAPIClient.ParameterEncoding.URL, httpHeaderFields: nil)
     }
     
-    public class func DefaultEndpointResolution(endpoint: ReactiveAPIEndpoint<T>) -> NSURLRequest {
+    public class func DefaultEndpointResolution(endpoint: APIEndpoint<T>) -> NSURLRequest {
         return endpoint.urlRequest
     }
 }
