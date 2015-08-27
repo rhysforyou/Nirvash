@@ -1,6 +1,6 @@
 //
 //  ReactiveAPISpec.swift
-//  ReactiveAPIClient
+//  Nirvash
 //
 //  Created by Rhys Powell on 9/08/2015.
 //  Copyright © 2015 Rhys Powell. All rights reserved.
@@ -10,7 +10,7 @@ import Foundation
 
 import Quick
 import Nimble
-import ReactiveAPIClient
+import Nirvash
 
 class ReactiveAPISpec : QuickSpec {
     let provider = APIProvider<Polls>()

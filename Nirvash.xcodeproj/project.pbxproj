@@ -7,39 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		570BDB2D1B8EFB6A008884D5 /* Common.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB131B8EFB6A008884D5 /* Common.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		570BDB2E1B8EFB6A008884D5 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB151B8EFB6A008884D5 /* Debug.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		570BDB2F1B8EFB6A008884D5 /* Profile.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB161B8EFB6A008884D5 /* Profile.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		570BDB301B8EFB6A008884D5 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB171B8EFB6A008884D5 /* Release.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		570BDB311B8EFB6A008884D5 /* Test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB181B8EFB6A008884D5 /* Test.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		570BDB321B8EFB6A008884D5 /* Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB1A1B8EFB6A008884D5 /* Application.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		570BDB331B8EFB6A008884D5 /* Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB1B1B8EFB6A008884D5 /* Framework.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		570BDB341B8EFB6A008884D5 /* StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB1C1B8EFB6A008884D5 /* StaticLibrary.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		570BDB351B8EFB6A008884D5 /* iOS-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB1E1B8EFB6A008884D5 /* iOS-Application.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		570BDB361B8EFB6A008884D5 /* iOS-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB1F1B8EFB6A008884D5 /* iOS-Base.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		570BDB371B8EFB6A008884D5 /* iOS-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB201B8EFB6A008884D5 /* iOS-Framework.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		570BDB381B8EFB6A008884D5 /* iOS-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB211B8EFB6A008884D5 /* iOS-StaticLibrary.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		570BDB391B8EFB6A008884D5 /* Mac-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB231B8EFB6A008884D5 /* Mac-Application.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		570BDB3A1B8EFB6A008884D5 /* Mac-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB241B8EFB6A008884D5 /* Mac-Base.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		570BDB3B1B8EFB6A008884D5 /* Mac-DynamicLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB251B8EFB6A008884D5 /* Mac-DynamicLibrary.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		570BDB3C1B8EFB6A008884D5 /* Mac-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB261B8EFB6A008884D5 /* Mac-Framework.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		570BDB3D1B8EFB6A008884D5 /* Mac-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB271B8EFB6A008884D5 /* Mac-StaticLibrary.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		570BDB3E1B8EFB6A008884D5 /* watchOS-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB291B8EFB6A008884D5 /* watchOS-Application.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		570BDB3F1B8EFB6A008884D5 /* watchOS-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB2A1B8EFB6A008884D5 /* watchOS-Base.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		570BDB401B8EFB6A008884D5 /* watchOS-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB2B1B8EFB6A008884D5 /* watchOS-Framework.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		570BDB411B8EFB6A008884D5 /* watchOS-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB2C1B8EFB6A008884D5 /* watchOS-StaticLibrary.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		570BDB6D1B8EFBDE008884D5 /* ReactiveAPIClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB631B8EFBDE008884D5 /* ReactiveAPIClient.framework */; settings = {ASSET_TAGS = (); }; };
-		570BDB7A1B8EFC11008884D5 /* ReactiveAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579EB5171B7778E700BB6267 /* ReactiveAPI.swift */; settings = {ASSET_TAGS = (); }; };
-		570BDB7B1B8EFC16008884D5 /* PollsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579EB52B1B777AD100BB6267 /* PollsAPI.swift */; settings = {ASSET_TAGS = (); }; };
-		570BDB7C1B8EFC19008884D5 /* ReactiveAPISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579EB52D1B778ED800BB6267 /* ReactiveAPISpec.swift */; settings = {ASSET_TAGS = (); }; };
-		570BDB8F1B8EFCF5008884D5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB7E1B8EFCF5008884D5 /* Alamofire.framework */; settings = {ASSET_TAGS = (); }; };
-		570BDB911B8EFCF5008884D5 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB801B8EFCF5008884D5 /* Nimble.framework */; settings = {ASSET_TAGS = (); }; };
-		570BDB931B8EFCF5008884D5 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB821B8EFCF5008884D5 /* Quick.framework */; settings = {ASSET_TAGS = (); }; };
-		570BDB951B8EFCF5008884D5 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB841B8EFCF5008884D5 /* ReactiveCocoa.framework */; settings = {ASSET_TAGS = (); }; };
-		570BDB971B8EFCF5008884D5 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB861B8EFCF5008884D5 /* Result.framework */; settings = {ASSET_TAGS = (); }; };
-		570BDB991B8EFCF5008884D5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB891B8EFCF5008884D5 /* Alamofire.framework */; settings = {ASSET_TAGS = (); }; };
-		570BDB9B1B8EFCF5008884D5 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB8B1B8EFCF5008884D5 /* ReactiveCocoa.framework */; settings = {ASSET_TAGS = (); }; };
-		570BDB9D1B8EFCF5008884D5 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB8D1B8EFCF5008884D5 /* Result.framework */; settings = {ASSET_TAGS = (); }; };
+		570BDB2D1B8EFB6A008884D5 /* Common.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB131B8EFB6A008884D5 /* Common.xcconfig */; };
+		570BDB2E1B8EFB6A008884D5 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB151B8EFB6A008884D5 /* Debug.xcconfig */; };
+		570BDB2F1B8EFB6A008884D5 /* Profile.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB161B8EFB6A008884D5 /* Profile.xcconfig */; };
+		570BDB301B8EFB6A008884D5 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB171B8EFB6A008884D5 /* Release.xcconfig */; };
+		570BDB311B8EFB6A008884D5 /* Test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB181B8EFB6A008884D5 /* Test.xcconfig */; };
+		570BDB321B8EFB6A008884D5 /* Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB1A1B8EFB6A008884D5 /* Application.xcconfig */; };
+		570BDB331B8EFB6A008884D5 /* Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB1B1B8EFB6A008884D5 /* Framework.xcconfig */; };
+		570BDB341B8EFB6A008884D5 /* StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB1C1B8EFB6A008884D5 /* StaticLibrary.xcconfig */; };
+		570BDB351B8EFB6A008884D5 /* iOS-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB1E1B8EFB6A008884D5 /* iOS-Application.xcconfig */; };
+		570BDB361B8EFB6A008884D5 /* iOS-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB1F1B8EFB6A008884D5 /* iOS-Base.xcconfig */; };
+		570BDB371B8EFB6A008884D5 /* iOS-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB201B8EFB6A008884D5 /* iOS-Framework.xcconfig */; };
+		570BDB381B8EFB6A008884D5 /* iOS-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB211B8EFB6A008884D5 /* iOS-StaticLibrary.xcconfig */; };
+		570BDB391B8EFB6A008884D5 /* Mac-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB231B8EFB6A008884D5 /* Mac-Application.xcconfig */; };
+		570BDB3A1B8EFB6A008884D5 /* Mac-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB241B8EFB6A008884D5 /* Mac-Base.xcconfig */; };
+		570BDB3B1B8EFB6A008884D5 /* Mac-DynamicLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB251B8EFB6A008884D5 /* Mac-DynamicLibrary.xcconfig */; };
+		570BDB3C1B8EFB6A008884D5 /* Mac-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB261B8EFB6A008884D5 /* Mac-Framework.xcconfig */; };
+		570BDB3D1B8EFB6A008884D5 /* Mac-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB271B8EFB6A008884D5 /* Mac-StaticLibrary.xcconfig */; };
+		570BDB3E1B8EFB6A008884D5 /* watchOS-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB291B8EFB6A008884D5 /* watchOS-Application.xcconfig */; };
+		570BDB3F1B8EFB6A008884D5 /* watchOS-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB2A1B8EFB6A008884D5 /* watchOS-Base.xcconfig */; };
+		570BDB401B8EFB6A008884D5 /* watchOS-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB2B1B8EFB6A008884D5 /* watchOS-Framework.xcconfig */; };
+		570BDB411B8EFB6A008884D5 /* watchOS-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB2C1B8EFB6A008884D5 /* watchOS-StaticLibrary.xcconfig */; };
+		570BDB6D1B8EFBDE008884D5 /* Nirvash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB631B8EFBDE008884D5 /* Nirvash.framework */; };
+		570BDB7A1B8EFC11008884D5 /* Nirvash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579EB5171B7778E700BB6267 /* Nirvash.swift */; };
+		570BDB7B1B8EFC16008884D5 /* PollsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579EB52B1B777AD100BB6267 /* PollsAPI.swift */; };
+		570BDB7C1B8EFC19008884D5 /* ReactiveAPISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579EB52D1B778ED800BB6267 /* ReactiveAPISpec.swift */; };
+		570BDB8F1B8EFCF5008884D5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB7E1B8EFCF5008884D5 /* Alamofire.framework */; };
+		570BDB911B8EFCF5008884D5 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB801B8EFCF5008884D5 /* Nimble.framework */; };
+		570BDB931B8EFCF5008884D5 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB821B8EFCF5008884D5 /* Quick.framework */; };
+		570BDB951B8EFCF5008884D5 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB841B8EFCF5008884D5 /* ReactiveCocoa.framework */; };
+		570BDB971B8EFCF5008884D5 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB861B8EFCF5008884D5 /* Result.framework */; };
+		570BDB991B8EFCF5008884D5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB891B8EFCF5008884D5 /* Alamofire.framework */; };
+		570BDB9B1B8EFCF5008884D5 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB8B1B8EFCF5008884D5 /* ReactiveCocoa.framework */; };
+		570BDB9D1B8EFCF5008884D5 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB8D1B8EFCF5008884D5 /* Result.framework */; };
 		570BDB9F1B8EFD50008884D5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB7E1B8EFCF5008884D5 /* Alamofire.framework */; };
 		570BDBA01B8EFD50008884D5 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB841B8EFCF5008884D5 /* ReactiveCocoa.framework */; };
 		570BDBA11B8EFD50008884D5 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB861B8EFCF5008884D5 /* Result.framework */; };
@@ -49,7 +49,7 @@
 		570BDBA61B8EFE3F008884D5 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB801B8EFCF5008884D5 /* Nimble.framework */; };
 		570BDBA71B8EFE3F008884D5 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB821B8EFCF5008884D5 /* Quick.framework */; };
 		570BDBA81B8EFE3F008884D5 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB841B8EFCF5008884D5 /* ReactiveCocoa.framework */; };
-		570BDBB61B8EFE9D008884D5 /* ReactiveAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579EB5171B7778E700BB6267 /* ReactiveAPI.swift */; settings = {ASSET_TAGS = (); }; };
+		570BDBB61B8EFE9D008884D5 /* Nirvash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579EB5171B7778E700BB6267 /* Nirvash.swift */; };
 		570BDBB71B8EFF0E008884D5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB891B8EFCF5008884D5 /* Alamofire.framework */; };
 		570BDBB81B8EFF0E008884D5 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB8B1B8EFCF5008884D5 /* ReactiveCocoa.framework */; };
 		570BDBB91B8EFF0E008884D5 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB8D1B8EFCF5008884D5 /* Result.framework */; };
@@ -59,8 +59,8 @@
 		576DBA9A1B78BCDF00723A15 /* SignalProducerNimbleMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576DBA991B78BCDF00723A15 /* SignalProducerNimbleMatchers.swift */; };
 		576DBA9D1B78CF5300723A15 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579EB51C1B7779C200BB6267 /* ReactiveCocoa.framework */; };
 		576DBA9E1B78CF5900723A15 /* ReactiveCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 579EB51C1B7779C200BB6267 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		579EB5081B77783900BB6267 /* ReactiveAPIClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579EB4FD1B77783900BB6267 /* ReactiveAPIClient.framework */; };
-		579EB5181B7778E700BB6267 /* ReactiveAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579EB5171B7778E700BB6267 /* ReactiveAPI.swift */; };
+		579EB5081B77783900BB6267 /* Nirvash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579EB4FD1B77783900BB6267 /* Nirvash.framework */; };
+		579EB5181B7778E700BB6267 /* Nirvash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579EB5171B7778E700BB6267 /* Nirvash.swift */; };
 		579EB51F1B7779C200BB6267 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579EB5191B7779C200BB6267 /* Alamofire.framework */; };
 		579EB5221B7779C200BB6267 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579EB51C1B7779C200BB6267 /* ReactiveCocoa.framework */; };
 		579EB5231B7779C200BB6267 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579EB51D1B7779C200BB6267 /* Result.framework */; };
@@ -78,14 +78,14 @@
 			containerPortal = 579EB4F41B77783900BB6267 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 570BDB621B8EFBDE008884D5;
-			remoteInfo = "ReactiveAPIClient-OSX";
+			remoteInfo = "Nirvash-OSX";
 		};
 		579EB5091B77783900BB6267 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 579EB4F41B77783900BB6267 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 579EB4FC1B77783900BB6267;
-			remoteInfo = ReactiveAPIClient;
+			remoteInfo = Nirvash;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -138,8 +138,8 @@
 		570BDB2A1B8EFB6A008884D5 /* watchOS-Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "watchOS-Base.xcconfig"; sourceTree = "<group>"; };
 		570BDB2B1B8EFB6A008884D5 /* watchOS-Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "watchOS-Framework.xcconfig"; sourceTree = "<group>"; };
 		570BDB2C1B8EFB6A008884D5 /* watchOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "watchOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
-		570BDB631B8EFBDE008884D5 /* ReactiveAPIClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveAPIClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		570BDB6C1B8EFBDE008884D5 /* ReactiveAPIClient-MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactiveAPIClient-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		570BDB631B8EFBDE008884D5 /* Nirvash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nirvash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		570BDB6C1B8EFBDE008884D5 /* Nirvash-MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nirvash-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		570BDB7E1B8EFCF5008884D5 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		570BDB801B8EFCF5008884D5 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = "<group>"; };
 		570BDB821B8EFCF5008884D5 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = "<group>"; };
@@ -148,13 +148,13 @@
 		570BDB891B8EFCF5008884D5 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		570BDB8B1B8EFCF5008884D5 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveCocoa.framework; sourceTree = "<group>"; };
 		570BDB8D1B8EFCF5008884D5 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = "<group>"; };
-		570BDBAE1B8EFE92008884D5 /* ReactiveAPIClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveAPIClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		570BDBAE1B8EFE92008884D5 /* Nirvash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nirvash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		576DBA991B78BCDF00723A15 /* SignalProducerNimbleMatchers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalProducerNimbleMatchers.swift; sourceTree = "<group>"; };
-		579EB4FD1B77783900BB6267 /* ReactiveAPIClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveAPIClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		579EB4FD1B77783900BB6267 /* Nirvash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nirvash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		579EB5021B77783900BB6267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		579EB5071B77783900BB6267 /* ReactiveAPIClient-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactiveAPIClient-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		579EB5071B77783900BB6267 /* Nirvash-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nirvash-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		579EB50E1B77783900BB6267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		579EB5171B7778E700BB6267 /* ReactiveAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveAPI.swift; sourceTree = "<group>"; };
+		579EB5171B7778E700BB6267 /* Nirvash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nirvash.swift; sourceTree = "<group>"; };
 		579EB5191B7779C200BB6267 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		579EB51A1B7779C200BB6267 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		579EB51B1B7779C200BB6267 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
@@ -179,7 +179,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				570BDB6D1B8EFBDE008884D5 /* ReactiveAPIClient.framework in Frameworks */,
+				570BDB6D1B8EFBDE008884D5 /* Nirvash.framework in Frameworks */,
 				570BDBA61B8EFE3F008884D5 /* Nimble.framework in Frameworks */,
 				570BDBA71B8EFE3F008884D5 /* Quick.framework in Frameworks */,
 				570BDBA81B8EFE3F008884D5 /* ReactiveCocoa.framework in Frameworks */,
@@ -218,7 +218,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				579EB5081B77783900BB6267 /* ReactiveAPIClient.framework in Frameworks */,
+				579EB5081B77783900BB6267 /* Nirvash.framework in Frameworks */,
 				579EB5261B7779E500BB6267 /* Quick.framework in Frameworks */,
 				579EB5271B7779E700BB6267 /* Nimble.framework in Frameworks */,
 				576DBA9D1B78CF5300723A15 /* ReactiveCocoa.framework in Frameworks */,
@@ -355,8 +355,8 @@
 		579EB4F31B77783900BB6267 = {
 			isa = PBXGroup;
 			children = (
-				579EB4FF1B77783900BB6267 /* ReactiveAPIClient */,
-				579EB50B1B77783900BB6267 /* ReactiveAPIClientTests */,
+				579EB4FF1B77783900BB6267 /* Nirvash */,
+				579EB50B1B77783900BB6267 /* NirvashTests */,
 				579EB4FE1B77783900BB6267 /* Products */,
 				570BDB111B8EFB58008884D5 /* Configuration */,
 				579EB5251B7779C900BB6267 /* Frameworks */,
@@ -366,25 +366,25 @@
 		579EB4FE1B77783900BB6267 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				579EB4FD1B77783900BB6267 /* ReactiveAPIClient.framework */,
-				579EB5071B77783900BB6267 /* ReactiveAPIClient-iOSTests.xctest */,
-				570BDB631B8EFBDE008884D5 /* ReactiveAPIClient.framework */,
-				570BDB6C1B8EFBDE008884D5 /* ReactiveAPIClient-MacTests.xctest */,
-				570BDBAE1B8EFE92008884D5 /* ReactiveAPIClient.framework */,
+				579EB4FD1B77783900BB6267 /* Nirvash.framework */,
+				579EB5071B77783900BB6267 /* Nirvash-iOSTests.xctest */,
+				570BDB631B8EFBDE008884D5 /* Nirvash.framework */,
+				570BDB6C1B8EFBDE008884D5 /* Nirvash-MacTests.xctest */,
+				570BDBAE1B8EFE92008884D5 /* Nirvash.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		579EB4FF1B77783900BB6267 /* ReactiveAPIClient */ = {
+		579EB4FF1B77783900BB6267 /* Nirvash */ = {
 			isa = PBXGroup;
 			children = (
 				579EB5021B77783900BB6267 /* Info.plist */,
-				579EB5171B7778E700BB6267 /* ReactiveAPI.swift */,
+				579EB5171B7778E700BB6267 /* Nirvash.swift */,
 			);
-			path = ReactiveAPIClient;
+			path = Nirvash;
 			sourceTree = "<group>";
 		};
-		579EB50B1B77783900BB6267 /* ReactiveAPIClientTests */ = {
+		579EB50B1B77783900BB6267 /* NirvashTests */ = {
 			isa = PBXGroup;
 			children = (
 				576DBA981B78BCC800723A15 /* Supporting Files */,
@@ -392,7 +392,7 @@
 				579EB52B1B777AD100BB6267 /* PollsAPI.swift */,
 				579EB52D1B778ED800BB6267 /* ReactiveAPISpec.swift */,
 			);
-			path = ReactiveAPIClientTests;
+			path = NirvashTests;
 			sourceTree = "<group>";
 		};
 		579EB5251B7779C900BB6267 /* Frameworks */ = {
@@ -432,9 +432,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		570BDB621B8EFBDE008884D5 /* ReactiveAPIClient-Mac */ = {
+		570BDB621B8EFBDE008884D5 /* Nirvash-Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 570BDB741B8EFBDE008884D5 /* Build configuration list for PBXNativeTarget "ReactiveAPIClient-Mac" */;
+			buildConfigurationList = 570BDB741B8EFBDE008884D5 /* Build configuration list for PBXNativeTarget "Nirvash-Mac" */;
 			buildPhases = (
 				570BDB5E1B8EFBDE008884D5 /* Sources */,
 				570BDB5F1B8EFBDE008884D5 /* Frameworks */,
@@ -445,14 +445,14 @@
 			);
 			dependencies = (
 			);
-			name = "ReactiveAPIClient-Mac";
-			productName = "ReactiveAPIClient-OSX";
-			productReference = 570BDB631B8EFBDE008884D5 /* ReactiveAPIClient.framework */;
+			name = "Nirvash-Mac";
+			productName = "Nirvash-OSX";
+			productReference = 570BDB631B8EFBDE008884D5 /* Nirvash.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		570BDB6B1B8EFBDE008884D5 /* ReactiveAPIClient-MacTests */ = {
+		570BDB6B1B8EFBDE008884D5 /* Nirvash-MacTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 570BDB771B8EFBDE008884D5 /* Build configuration list for PBXNativeTarget "ReactiveAPIClient-MacTests" */;
+			buildConfigurationList = 570BDB771B8EFBDE008884D5 /* Build configuration list for PBXNativeTarget "Nirvash-MacTests" */;
 			buildPhases = (
 				570BDB681B8EFBDE008884D5 /* Sources */,
 				570BDB691B8EFBDE008884D5 /* Frameworks */,
@@ -464,14 +464,14 @@
 			dependencies = (
 				570BDB6F1B8EFBDE008884D5 /* PBXTargetDependency */,
 			);
-			name = "ReactiveAPIClient-MacTests";
-			productName = "ReactiveAPIClient-OSXTests";
-			productReference = 570BDB6C1B8EFBDE008884D5 /* ReactiveAPIClient-MacTests.xctest */;
+			name = "Nirvash-MacTests";
+			productName = "Nirvash-OSXTests";
+			productReference = 570BDB6C1B8EFBDE008884D5 /* Nirvash-MacTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		570BDBAD1B8EFE92008884D5 /* ReactiveAPIClient-watchOS */ = {
+		570BDBAD1B8EFE92008884D5 /* Nirvash-watchOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 570BDBB31B8EFE92008884D5 /* Build configuration list for PBXNativeTarget "ReactiveAPIClient-watchOS" */;
+			buildConfigurationList = 570BDBB31B8EFE92008884D5 /* Build configuration list for PBXNativeTarget "Nirvash-watchOS" */;
 			buildPhases = (
 				570BDBA91B8EFE92008884D5 /* Sources */,
 				570BDBAA1B8EFE92008884D5 /* Frameworks */,
@@ -482,14 +482,14 @@
 			);
 			dependencies = (
 			);
-			name = "ReactiveAPIClient-watchOS";
-			productName = "ReactiveAPIClient-watchOS";
-			productReference = 570BDBAE1B8EFE92008884D5 /* ReactiveAPIClient.framework */;
+			name = "Nirvash-watchOS";
+			productName = "Nirvash-watchOS";
+			productReference = 570BDBAE1B8EFE92008884D5 /* Nirvash.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		579EB4FC1B77783900BB6267 /* ReactiveAPIClient-iOS */ = {
+		579EB4FC1B77783900BB6267 /* Nirvash-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 579EB5111B77783900BB6267 /* Build configuration list for PBXNativeTarget "ReactiveAPIClient-iOS" */;
+			buildConfigurationList = 579EB5111B77783900BB6267 /* Build configuration list for PBXNativeTarget "Nirvash-iOS" */;
 			buildPhases = (
 				579EB4F81B77783900BB6267 /* Sources */,
 				579EB4F91B77783900BB6267 /* Frameworks */,
@@ -501,14 +501,14 @@
 			);
 			dependencies = (
 			);
-			name = "ReactiveAPIClient-iOS";
-			productName = ReactiveAPIClient;
-			productReference = 579EB4FD1B77783900BB6267 /* ReactiveAPIClient.framework */;
+			name = "Nirvash-iOS";
+			productName = Nirvash;
+			productReference = 579EB4FD1B77783900BB6267 /* Nirvash.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		579EB5061B77783900BB6267 /* ReactiveAPIClient-iOSTests */ = {
+		579EB5061B77783900BB6267 /* Nirvash-iOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 579EB5141B77783900BB6267 /* Build configuration list for PBXNativeTarget "ReactiveAPIClient-iOSTests" */;
+			buildConfigurationList = 579EB5141B77783900BB6267 /* Build configuration list for PBXNativeTarget "Nirvash-iOSTests" */;
 			buildPhases = (
 				579EB5031B77783900BB6267 /* Sources */,
 				579EB5041B77783900BB6267 /* Frameworks */,
@@ -520,9 +520,9 @@
 			dependencies = (
 				579EB50A1B77783900BB6267 /* PBXTargetDependency */,
 			);
-			name = "ReactiveAPIClient-iOSTests";
-			productName = ReactiveAPIClientTests;
-			productReference = 579EB5071B77783900BB6267 /* ReactiveAPIClient-iOSTests.xctest */;
+			name = "Nirvash-iOSTests";
+			productName = NirvashTests;
+			productReference = 579EB5071B77783900BB6267 /* Nirvash-iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -552,7 +552,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 579EB4F71B77783900BB6267 /* Build configuration list for PBXProject "ReactiveAPIClient" */;
+			buildConfigurationList = 579EB4F71B77783900BB6267 /* Build configuration list for PBXProject "Nirvash" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -564,11 +564,11 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				579EB4FC1B77783900BB6267 /* ReactiveAPIClient-iOS */,
-				579EB5061B77783900BB6267 /* ReactiveAPIClient-iOSTests */,
-				570BDB621B8EFBDE008884D5 /* ReactiveAPIClient-Mac */,
-				570BDB6B1B8EFBDE008884D5 /* ReactiveAPIClient-MacTests */,
-				570BDBAD1B8EFE92008884D5 /* ReactiveAPIClient-watchOS */,
+				579EB4FC1B77783900BB6267 /* Nirvash-iOS */,
+				579EB5061B77783900BB6267 /* Nirvash-iOSTests */,
+				570BDB621B8EFBDE008884D5 /* Nirvash-Mac */,
+				570BDB6B1B8EFBDE008884D5 /* Nirvash-MacTests */,
+				570BDBAD1B8EFE92008884D5 /* Nirvash-watchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -660,7 +660,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				570BDB7A1B8EFC11008884D5 /* ReactiveAPI.swift in Sources */,
+				570BDB7A1B8EFC11008884D5 /* Nirvash.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -677,7 +677,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				570BDBB61B8EFE9D008884D5 /* ReactiveAPI.swift in Sources */,
+				570BDBB61B8EFE9D008884D5 /* Nirvash.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,7 +685,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				579EB5181B7778E700BB6267 /* ReactiveAPI.swift in Sources */,
+				579EB5181B7778E700BB6267 /* Nirvash.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,12 +704,12 @@
 /* Begin PBXTargetDependency section */
 		570BDB6F1B8EFBDE008884D5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 570BDB621B8EFBDE008884D5 /* ReactiveAPIClient-Mac */;
+			target = 570BDB621B8EFBDE008884D5 /* Nirvash-Mac */;
 			targetProxy = 570BDB6E1B8EFBDE008884D5 /* PBXContainerItemProxy */;
 		};
 		579EB50A1B77783900BB6267 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 579EB4FC1B77783900BB6267 /* ReactiveAPIClient-iOS */;
+			target = 579EB4FC1B77783900BB6267 /* Nirvash-iOS */;
 			targetProxy = 579EB5091B77783900BB6267 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -729,11 +729,12 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "$(SRCROOT)/ReactiveAPIClient/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Nirvash/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rpowelll.ReactiveAPIClient-OSX";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rpowelll.Nirvash-OSX";
+				PRODUCT_NAME = Nirvash;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -753,11 +754,12 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "$(SRCROOT)/ReactiveAPIClient/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Nirvash/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rpowelll.ReactiveAPIClient-OSX";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rpowelll.Nirvash-OSX";
+				PRODUCT_NAME = Nirvash;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -772,11 +774,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = ReactiveAPIClientTests/Info.plist;
+				INFOPLIST_FILE = NirvashTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rpowelll.ReactiveAPIClient-OSXTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rpowelll.Nirvash-OSXTests";
+				PRODUCT_NAME = "Nirvash-MacTests";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -790,11 +792,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = ReactiveAPIClientTests/Info.plist;
+				INFOPLIST_FILE = NirvashTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rpowelll.ReactiveAPIClient-OSXTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rpowelll.Nirvash-OSXTests";
+				PRODUCT_NAME = "Nirvash-MacTests";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -811,10 +813,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/watchOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/ReactiveAPIClient/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Nirvash/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rpowelll.ReactiveAPIClient-watchOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rpowelll.Nirvash-watchOS";
+				PRODUCT_NAME = Nirvash;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -834,10 +837,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/watchOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/ReactiveAPIClient/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Nirvash/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rpowelll.ReactiveAPIClient-watchOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rpowelll.Nirvash-watchOS";
+				PRODUCT_NAME = Nirvash;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -949,10 +953,11 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 					"$(PROJECT_DIR)/Carthage/Build/watchOS",
 				);
-				INFOPLIST_FILE = ReactiveAPIClient/Info.plist;
+				INFOPLIST_FILE = Nirvash/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rpowelll.ReactiveAPIClient;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpowelll.Nirvash;
+				PRODUCT_NAME = Nirvash;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -973,10 +978,11 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 					"$(PROJECT_DIR)/Carthage/Build/watchOS",
 				);
-				INFOPLIST_FILE = ReactiveAPIClient/Info.plist;
+				INFOPLIST_FILE = Nirvash/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rpowelll.ReactiveAPIClient;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpowelll.Nirvash;
+				PRODUCT_NAME = Nirvash;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -990,10 +996,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = ReactiveAPIClientTests/Info.plist;
+				INFOPLIST_FILE = NirvashTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rpowelll.ReactiveAPIClientTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpowelll.NirvashTests;
+				PRODUCT_NAME = "Nirvash-iOSTests";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -1007,17 +1013,17 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = ReactiveAPIClientTests/Info.plist;
+				INFOPLIST_FILE = NirvashTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rpowelll.ReactiveAPIClientTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpowelll.NirvashTests;
+				PRODUCT_NAME = "Nirvash-iOSTests";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		570BDB741B8EFBDE008884D5 /* Build configuration list for PBXNativeTarget "ReactiveAPIClient-Mac" */ = {
+		570BDB741B8EFBDE008884D5 /* Build configuration list for PBXNativeTarget "Nirvash-Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				570BDB751B8EFBDE008884D5 /* Debug */,
@@ -1026,7 +1032,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		570BDB771B8EFBDE008884D5 /* Build configuration list for PBXNativeTarget "ReactiveAPIClient-MacTests" */ = {
+		570BDB771B8EFBDE008884D5 /* Build configuration list for PBXNativeTarget "Nirvash-MacTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				570BDB781B8EFBDE008884D5 /* Debug */,
@@ -1035,7 +1041,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		570BDBB31B8EFE92008884D5 /* Build configuration list for PBXNativeTarget "ReactiveAPIClient-watchOS" */ = {
+		570BDBB31B8EFE92008884D5 /* Build configuration list for PBXNativeTarget "Nirvash-watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				570BDBB41B8EFE92008884D5 /* Debug */,
@@ -1044,7 +1050,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		579EB4F71B77783900BB6267 /* Build configuration list for PBXProject "ReactiveAPIClient" */ = {
+		579EB4F71B77783900BB6267 /* Build configuration list for PBXProject "Nirvash" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				579EB50F1B77783900BB6267 /* Debug */,
@@ -1053,7 +1059,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		579EB5111B77783900BB6267 /* Build configuration list for PBXNativeTarget "ReactiveAPIClient-iOS" */ = {
+		579EB5111B77783900BB6267 /* Build configuration list for PBXNativeTarget "Nirvash-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				579EB5121B77783900BB6267 /* Debug */,
@@ -1062,7 +1068,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		579EB5141B77783900BB6267 /* Build configuration list for PBXNativeTarget "ReactiveAPIClient-iOSTests" */ = {
+		579EB5141B77783900BB6267 /* Build configuration list for PBXNativeTarget "Nirvash-iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				579EB5151B77783900BB6267 /* Debug */,

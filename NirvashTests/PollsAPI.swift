@@ -1,13 +1,13 @@
 //
 //  PollsAPI.swift
-//  ReactiveAPIClient
+//  Nirvash
 //
 //  Created by Rhys Powell on 9/08/2015.
 //  Copyright © 2015 Rhys Powell. All rights reserved.
 //
 
 import Foundation
-import ReactiveAPIClient
+import Nirvash
 
 // See http://docs.pollsapi.apiary.io/
 public enum Polls {
@@ -36,7 +36,7 @@ extension Polls : APITarget {
         }
     }
     
-    public var method: ReactiveAPIClient.Method {
+    public var method: Nirvash.Method {
         switch self {
         case .Root:
             return .GET

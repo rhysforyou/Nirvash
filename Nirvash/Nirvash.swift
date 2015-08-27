@@ -1,6 +1,6 @@
 //
-//  File.swift
-//  ReactiveAPIClient
+//  Nirvash.swift
+//  Nirvash
 //
 //  Created by Rhys Powell on 9/08/2015.
 //  Copyright © 2015 Rhys Powell. All rights reserved.
@@ -11,7 +11,7 @@ import Alamofire
 import ReactiveCocoa
 
 /// Solely used for namespacing
-public struct ReactiveAPIClient {
+public struct Nirvash {
     
     /// HTTP Methods
     public enum Method {
@@ -66,16 +66,16 @@ public struct ReactiveAPIClient {
 public protocol APITarget {
     var baseURL: NSURL { get }
     var path: String { get }
-    var method: ReactiveAPIClient.Method { get }
+    var method: Nirvash.Method { get }
     var parameters: [String: AnyObject]? { get }
     var sampleData: NSData { get }
 }
 
 public struct APIEndpoint<T> {
     public let URL: String
-    public let method: ReactiveAPIClient.Method
+    public let method: Nirvash.Method
     public let parameters: [String: AnyObject]?
-    public let parameterEncoding: ReactiveAPIClient.ParameterEncoding
+    public let parameterEncoding: Nirvash.ParameterEncoding
     public let httpHeaderFields: [String: String]?
     
     public var urlRequest: NSURLRequest {
@@ -109,7 +109,7 @@ public class APIProvider<T : APITarget> {
     
     public class func DefaultEndpointMapping(target: T) -> APIEndpoint<T> {
         let url = target.baseURL.URLByAppendingPathComponent(target.path).absoluteString
-        return APIEndpoint(URL: url, method: target.method, parameters: target.parameters, parameterEncoding: ReactiveAPIClient.ParameterEncoding.URL, httpHeaderFields: nil)
+        return APIEndpoint(URL: url, method: target.method, parameters: target.parameters, parameterEncoding: Nirvash.ParameterEncoding.URL, httpHeaderFields: nil)
     }
     
     public class func DefaultEndpointResolution(endpoint: APIEndpoint<T>) -> NSURLRequest {
