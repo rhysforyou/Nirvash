@@ -1,2 +1,2 @@
-github "Alamofire/Alamofire" "swift-2.0"
-github "rpowelll/ReactiveCocoa" "xcode-beta-carthage-fixes"
+github "Alamofire/Alamofire"
+github "ReactiveCocoa/ReactiveCocoa" "swift2"
