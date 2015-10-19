@@ -20,14 +20,18 @@ class ReactiveAPISpec : QuickSpec {
             it("returns the expected sample data") {
                 let response = Polls.Root.sampleData
                 let request = self.provider.request(.Root).map { data, response in return data }
-                
-                request.start(next: { value in
-                    print(NSString(data: value, encoding: NSUTF8StringEncoding)!)
-                }, error: { error in
-                    print(error)
-                }, completed: {
-                    print("--- completed")
-                })
+                request.start { event in
+                    switch event {
+                    case .Next(let value):
+                        print(NSString(data: value, encoding: NSUTF8StringEncoding)!)
+                    case .Error(let error):
+                        print(error)
+                    case .Interrupted:
+                        print("--- interrupted")
+                    case .Completed:
+                        print("--- completed")
+                    }
+                }
             }
         }
     }
