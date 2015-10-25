@@ -81,10 +81,10 @@ extension Polls : APITarget {
             return "[{\"question\": \"Favourite programming language?\",\"published_at\": \"2014-11-11T08:40:51.620Z\",\"url\": \"/questions/1\",\"choices\": [{\"choice\": \"Swift\",\"url\": \"/questions/1/choices/1\",\"votes\": 2048},{\"choice\": \"Python\",\"url\": \"/questions/1/choices/2\",\"votes\": 1024},{\"choice\": \"Objective-C\",\"url\": \"/questions/1/choices/3\",\"votes\": 512},{\"choice\": \"Ruby\",\"url\": \"/questions/1/choices/4\",\"votes\": 256}]}]".dataUsingEncoding(NSUTF8StringEncoding)!
         case .CreateQuestion(question: let question, choices: let choices):
             let choicesArray = choices.enumerate()
-                .map { idx, choice -> String in
+                .map { idx, choice in
                     return "{\"choice\": \"\(choice)\",\"url\": \"/questions/1/choices/\(idx+1)\",\"votes\": 0}"
                 }
-                .reduce("") { acc, choice -> String in
+                .reduce("") { acc, choice in
                     "\(acc),\(choice)"
                 }
             return "{\"question\": \"\(question)\",\"published_at\": \"2014-11-11T08:40:51.620Z\",\"url\": \"/questions/1\",\"choices\": [\(choicesArray)]}".dataUsingEncoding(NSUTF8StringEncoding)!

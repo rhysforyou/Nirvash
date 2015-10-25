@@ -7,27 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		570BDB2D1B8EFB6A008884D5 /* Common.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB131B8EFB6A008884D5 /* Common.xcconfig */; };
-		570BDB2E1B8EFB6A008884D5 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB151B8EFB6A008884D5 /* Debug.xcconfig */; };
-		570BDB2F1B8EFB6A008884D5 /* Profile.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB161B8EFB6A008884D5 /* Profile.xcconfig */; };
-		570BDB301B8EFB6A008884D5 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB171B8EFB6A008884D5 /* Release.xcconfig */; };
-		570BDB311B8EFB6A008884D5 /* Test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB181B8EFB6A008884D5 /* Test.xcconfig */; };
-		570BDB321B8EFB6A008884D5 /* Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB1A1B8EFB6A008884D5 /* Application.xcconfig */; };
-		570BDB331B8EFB6A008884D5 /* Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB1B1B8EFB6A008884D5 /* Framework.xcconfig */; };
-		570BDB341B8EFB6A008884D5 /* StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB1C1B8EFB6A008884D5 /* StaticLibrary.xcconfig */; };
-		570BDB351B8EFB6A008884D5 /* iOS-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB1E1B8EFB6A008884D5 /* iOS-Application.xcconfig */; };
-		570BDB361B8EFB6A008884D5 /* iOS-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB1F1B8EFB6A008884D5 /* iOS-Base.xcconfig */; };
-		570BDB371B8EFB6A008884D5 /* iOS-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB201B8EFB6A008884D5 /* iOS-Framework.xcconfig */; };
-		570BDB381B8EFB6A008884D5 /* iOS-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB211B8EFB6A008884D5 /* iOS-StaticLibrary.xcconfig */; };
-		570BDB391B8EFB6A008884D5 /* Mac-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB231B8EFB6A008884D5 /* Mac-Application.xcconfig */; };
-		570BDB3A1B8EFB6A008884D5 /* Mac-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB241B8EFB6A008884D5 /* Mac-Base.xcconfig */; };
-		570BDB3B1B8EFB6A008884D5 /* Mac-DynamicLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB251B8EFB6A008884D5 /* Mac-DynamicLibrary.xcconfig */; };
-		570BDB3C1B8EFB6A008884D5 /* Mac-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB261B8EFB6A008884D5 /* Mac-Framework.xcconfig */; };
-		570BDB3D1B8EFB6A008884D5 /* Mac-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB271B8EFB6A008884D5 /* Mac-StaticLibrary.xcconfig */; };
-		570BDB3E1B8EFB6A008884D5 /* watchOS-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB291B8EFB6A008884D5 /* watchOS-Application.xcconfig */; };
-		570BDB3F1B8EFB6A008884D5 /* watchOS-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB2A1B8EFB6A008884D5 /* watchOS-Base.xcconfig */; };
-		570BDB401B8EFB6A008884D5 /* watchOS-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB2B1B8EFB6A008884D5 /* watchOS-Framework.xcconfig */; };
-		570BDB411B8EFB6A008884D5 /* watchOS-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 570BDB2C1B8EFB6A008884D5 /* watchOS-StaticLibrary.xcconfig */; };
 		570BDB6D1B8EFBDE008884D5 /* Nirvash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB631B8EFBDE008884D5 /* Nirvash.framework */; };
 		570BDB7A1B8EFC11008884D5 /* Nirvash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579EB5171B7778E700BB6267 /* Nirvash.swift */; };
 		570BDB7B1B8EFC16008884D5 /* PollsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579EB52B1B777AD100BB6267 /* PollsAPI.swift */; };
@@ -516,7 +495,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Rhys Powell";
 				TargetAttributes = {
 					570BDB621B8EFBDE008884D5 = {
@@ -586,27 +565,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				570BDB3F1B8EFB6A008884D5 /* watchOS-Base.xcconfig in Resources */,
-				570BDB301B8EFB6A008884D5 /* Release.xcconfig in Resources */,
-				570BDB3C1B8EFB6A008884D5 /* Mac-Framework.xcconfig in Resources */,
-				570BDB2F1B8EFB6A008884D5 /* Profile.xcconfig in Resources */,
-				570BDB381B8EFB6A008884D5 /* iOS-StaticLibrary.xcconfig in Resources */,
-				570BDB341B8EFB6A008884D5 /* StaticLibrary.xcconfig in Resources */,
-				570BDB361B8EFB6A008884D5 /* iOS-Base.xcconfig in Resources */,
-				570BDB2E1B8EFB6A008884D5 /* Debug.xcconfig in Resources */,
-				570BDB2D1B8EFB6A008884D5 /* Common.xcconfig in Resources */,
-				570BDB401B8EFB6A008884D5 /* watchOS-Framework.xcconfig in Resources */,
-				570BDB331B8EFB6A008884D5 /* Framework.xcconfig in Resources */,
-				570BDB391B8EFB6A008884D5 /* Mac-Application.xcconfig in Resources */,
-				570BDB411B8EFB6A008884D5 /* watchOS-StaticLibrary.xcconfig in Resources */,
-				570BDB3A1B8EFB6A008884D5 /* Mac-Base.xcconfig in Resources */,
-				570BDB3E1B8EFB6A008884D5 /* watchOS-Application.xcconfig in Resources */,
-				570BDB311B8EFB6A008884D5 /* Test.xcconfig in Resources */,
-				570BDB3D1B8EFB6A008884D5 /* Mac-StaticLibrary.xcconfig in Resources */,
-				570BDB321B8EFB6A008884D5 /* Application.xcconfig in Resources */,
-				570BDB3B1B8EFB6A008884D5 /* Mac-DynamicLibrary.xcconfig in Resources */,
-				570BDB371B8EFB6A008884D5 /* iOS-Framework.xcconfig in Resources */,
-				570BDB351B8EFB6A008884D5 /* iOS-Application.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
