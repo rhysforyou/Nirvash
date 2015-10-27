@@ -41,6 +41,10 @@
 		579EB52A1B7779F500BB6267 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 579EB51A1B7779C200BB6267 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		579EB52C1B777AD100BB6267 /* PollsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579EB52B1B777AD100BB6267 /* PollsAPI.swift */; };
 		579EB52E1B778ED800BB6267 /* ReactiveAPISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579EB52D1B778ED800BB6267 /* ReactiveAPISpec.swift */; };
+		57C205491BE042AE0046CD10 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB7E1B8EFCF5008884D5 /* Alamofire.framework */; };
+		57C2054A1BE042B50046CD10 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 570BDB7E1B8EFCF5008884D5 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		57C2054B1BE042C40046CD10 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB861B8EFCF5008884D5 /* Result.framework */; };
+		57C2054C1BE042C80046CD10 /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 570BDB861B8EFCF5008884D5 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +74,8 @@
 				570BDBA51B8EFD74008884D5 /* ReactiveCocoa.framework in CopyFiles */,
 				570BDBA31B8EFD69008884D5 /* Nimble.framework in CopyFiles */,
 				570BDBA41B8EFD69008884D5 /* Quick.framework in CopyFiles */,
+				57C2054A1BE042B50046CD10 /* Alamofire.framework in CopyFiles */,
+				57C2054C1BE042C80046CD10 /* Result.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +160,8 @@
 				570BDBA61B8EFE3F008884D5 /* Nimble.framework in Frameworks */,
 				570BDBA71B8EFE3F008884D5 /* Quick.framework in Frameworks */,
 				570BDBA81B8EFE3F008884D5 /* ReactiveCocoa.framework in Frameworks */,
+				57C205491BE042AE0046CD10 /* Alamofire.framework in Frameworks */,
+				57C2054B1BE042C40046CD10 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
