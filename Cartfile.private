@@ -1,3 +1,3 @@
 github "jspahrsummers/xcconfigs" "master"
-github "Quick/Quick"
-github "Quick/Nimble"
+github "Quick/Quick" "v0.8.0"
+github "Quick/Nimble" "v3.0.0"
