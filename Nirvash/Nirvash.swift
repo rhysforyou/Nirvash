@@ -61,6 +61,12 @@ public struct Nirvash {
             }
         }
     }
+    
+    public enum StubbingBehaviour {
+        case Never
+        case Immediately
+        case Delayed(seconds: Int)
+    }
 }
 
 public protocol APITarget {
@@ -86,33 +92,88 @@ public struct APIEndpoint<T> {
     }
 }
 
-public class APIProvider<T : APITarget> {
-    public typealias ReactiveAPIEndpointClosure = (T) -> (APIEndpoint<T>)
-    public typealias ReactiveAPIEndpointResolution = (endpoint: APIEndpoint<T>) -> (NSURLRequest)
+public class APIProvider<Target : APITarget> {
+    public typealias EndpointClosure = (Target) -> (APIEndpoint<Target>)
+    public typealias RequestClosure = (endpoint: APIEndpoint<Target>) -> (NSURLRequest)
+    public typealias StubClosure = (Target) -> (Nirvash.StubbingBehaviour)
     
-    public let endpointClosure: ReactiveAPIEndpointClosure
-    public let endpointResolver: ReactiveAPIEndpointResolution
+    public let endpointClosure: EndpointClosure
+    public let requestClosure: RequestClosure
+    public let stubClosure: StubClosure
     
-    public init(endpointClosure: ReactiveAPIEndpointClosure = APIProvider.DefaultEndpointMapping, endpointResolver: ReactiveAPIEndpointResolution = APIProvider.DefaultEndpointResolution) {
+    public init(endpointClosure: EndpointClosure = APIProvider.DefaultEndpointMapping,
+        requestClosure: RequestClosure = APIProvider.DefaultEndpointResolution,
+        stubClosure: StubClosure = APIProvider.NeverStub) {
+            
         self.endpointClosure = endpointClosure
-        self.endpointResolver = endpointResolver
+        self.requestClosure = requestClosure
+        self.stubClosure = stubClosure
     }
     
-    public func request(target: T) -> SignalProducer<(NSData, NSURLResponse), NSError> {
-        return SignalProducer<T, NSError>(value: target)
+    @warn_unused_result(message="Did you forget to call `start` om the producer?")
+    public func request(target: Target) -> SignalProducer<(NSData, NSURLResponse?), NSError> {
+        switch stubClosure(target) {
+        case .Never:
+            return sendRequest(target)
+        case .Immediately, .Delayed(seconds: _):
+            return stubRequest(target )
+        }
+    }
+    
+    public func sendRequest(target: Target) -> SignalProducer<(NSData, NSURLResponse?), NSError> {
+        return SignalProducer<Target, NSError>(value: target)
             .map(endpointClosure)
-            .map(endpointResolver)
+            .map(requestClosure)
             .flatMap(.Latest) { request in
                 return NSURLSession.sharedSession().rac_dataWithRequest(request)
             }
+            .map { data, response in
+                return (data, response)
+            }
     }
     
-    public class func DefaultEndpointMapping(target: T) -> APIEndpoint<T> {
+    public func stubRequest(target: Target) -> SignalProducer<(NSData, NSURLResponse?), NSError> {
+        var delay: NSTimeInterval
+        switch stubClosure(target) {
+        case .Never:
+            fatalError("Tried to stub target that should never be stubbed")
+        case .Immediately:
+            delay = 0
+        case .Delayed(seconds: let seconds):
+            delay = NSTimeInterval(seconds)
+        }
+        
+        return SignalProducer<Target, NSError>(value: target)
+            .map { ($0.sampleData, nil) }
+            .delay(delay, onScheduler: QueueScheduler())
+    }
+}
+
+// MARK: - Defaults
+
+extension APIProvider {
+    public class func DefaultEndpointMapping(target: Target) -> APIEndpoint<Target> {
         let url = target.baseURL.URLByAppendingPathComponent(target.path).absoluteString
         return APIEndpoint(URL: url, method: target.method, parameters: target.parameters, parameterEncoding: Nirvash.ParameterEncoding.URL, httpHeaderFields: nil)
     }
     
-    public class func DefaultEndpointResolution(endpoint: APIEndpoint<T>) -> NSURLRequest {
+    public class func DefaultEndpointResolution(endpoint: APIEndpoint<Target>) -> NSURLRequest {
         return endpoint.urlRequest
+    }
+}
+
+// MARK: - Stubbing
+
+extension APIProvider {
+    public class func NeverStub(_: Target) -> Nirvash.StubbingBehaviour {
+        return .Never
+    }
+    
+    public class func ImmediatelyStub(_: Target) -> Nirvash.StubbingBehaviour {
+        return .Immediately
+    }
+    
+    public class func DelayedStub(seconds: Int)(_: Target) -> Nirvash.StubbingBehaviour {
+        return .Delayed(seconds: seconds)
     }
 }

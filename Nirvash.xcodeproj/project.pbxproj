@@ -10,7 +10,7 @@
 		570BDB6D1B8EFBDE008884D5 /* Nirvash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB631B8EFBDE008884D5 /* Nirvash.framework */; };
 		570BDB7A1B8EFC11008884D5 /* Nirvash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579EB5171B7778E700BB6267 /* Nirvash.swift */; };
 		570BDB7B1B8EFC16008884D5 /* PollsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579EB52B1B777AD100BB6267 /* PollsAPI.swift */; };
-		570BDB7C1B8EFC19008884D5 /* ReactiveAPISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579EB52D1B778ED800BB6267 /* ReactiveAPISpec.swift */; };
+		570BDB7C1B8EFC19008884D5 /* NirvashSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579EB52D1B778ED800BB6267 /* NirvashSpec.swift */; };
 		570BDB9F1B8EFD50008884D5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB7E1B8EFCF5008884D5 /* Alamofire.framework */; };
 		570BDBA01B8EFD50008884D5 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB841B8EFCF5008884D5 /* ReactiveCocoa.framework */; };
 		570BDBA11B8EFD50008884D5 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB861B8EFCF5008884D5 /* Result.framework */; };
@@ -40,7 +40,7 @@
 		579EB5291B7779F200BB6267 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 579EB51B1B7779C200BB6267 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		579EB52A1B7779F500BB6267 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 579EB51A1B7779C200BB6267 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		579EB52C1B777AD100BB6267 /* PollsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579EB52B1B777AD100BB6267 /* PollsAPI.swift */; };
-		579EB52E1B778ED800BB6267 /* ReactiveAPISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579EB52D1B778ED800BB6267 /* ReactiveAPISpec.swift */; };
+		579EB52E1B778ED800BB6267 /* NirvashSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579EB52D1B778ED800BB6267 /* NirvashSpec.swift */; };
 		57C205491BE042AE0046CD10 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB7E1B8EFCF5008884D5 /* Alamofire.framework */; };
 		57C2054A1BE042B50046CD10 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 570BDB7E1B8EFCF5008884D5 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		57C2054B1BE042C40046CD10 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BDB861B8EFCF5008884D5 /* Result.framework */; };
@@ -138,7 +138,7 @@
 		579EB51C1B7779C200BB6267 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		579EB51D1B7779C200BB6267 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		579EB52B1B777AD100BB6267 /* PollsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollsAPI.swift; sourceTree = "<group>"; };
-		579EB52D1B778ED800BB6267 /* ReactiveAPISpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveAPISpec.swift; sourceTree = "<group>"; };
+		579EB52D1B778ED800BB6267 /* NirvashSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NirvashSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -361,7 +361,7 @@
 				576DBA981B78BCC800723A15 /* Supporting Files */,
 				579EB50E1B77783900BB6267 /* Info.plist */,
 				579EB52B1B777AD100BB6267 /* PollsAPI.swift */,
-				579EB52D1B778ED800BB6267 /* ReactiveAPISpec.swift */,
+				579EB52D1B778ED800BB6267 /* NirvashSpec.swift */,
 			);
 			path = NirvashTests;
 			sourceTree = "<group>";
@@ -618,7 +618,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				570BDB7C1B8EFC19008884D5 /* ReactiveAPISpec.swift in Sources */,
+				570BDB7C1B8EFC19008884D5 /* NirvashSpec.swift in Sources */,
 				570BDB7B1B8EFC16008884D5 /* PollsAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -643,7 +643,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				579EB52E1B778ED800BB6267 /* ReactiveAPISpec.swift in Sources */,
+				579EB52E1B778ED800BB6267 /* NirvashSpec.swift in Sources */,
 				579EB52C1B777AD100BB6267 /* PollsAPI.swift in Sources */,
 				576DBA9A1B78BCDF00723A15 /* SignalProducerNimbleMatchers.swift in Sources */,
 			);

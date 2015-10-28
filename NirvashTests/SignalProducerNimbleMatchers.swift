@@ -29,14 +29,14 @@ public func sendValues<T: Equatable, E: Equatable>(values: [T], sendError maybeS
             
             signalProducer.start { event in
                 switch event {
-                case .Next(let value):
+                case let .Next(value):
                     sentValues.append(value)
-                case .Error(let error):
-                    sentError = error
-                case .Interrupted:
-                    break
                 case .Completed:
                     signalCompleted = true
+                case let .Failed(error):
+                    sentError = error
+                default:
+                    break
                 }
             }
             
