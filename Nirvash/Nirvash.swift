@@ -100,14 +100,17 @@ public class APIProvider<Target : APITarget> {
     public let endpointClosure: EndpointClosure
     public let requestClosure: RequestClosure
     public let stubClosure: StubClosure
+    public let stubScheduler: DateSchedulerType
     
     public init(endpointClosure: EndpointClosure = APIProvider.DefaultEndpointMapping,
         requestClosure: RequestClosure = APIProvider.DefaultEndpointResolution,
-        stubClosure: StubClosure = APIProvider.NeverStub) {
+        stubClosure: StubClosure = APIProvider.NeverStub,
+        stubScheduler: DateSchedulerType = QueueScheduler()) {
             
         self.endpointClosure = endpointClosure
         self.requestClosure = requestClosure
         self.stubClosure = stubClosure
+        self.stubScheduler = stubScheduler
     }
     
     @warn_unused_result(message="Did you forget to call `start` om the producer?")
@@ -145,7 +148,7 @@ public class APIProvider<Target : APITarget> {
         
         return SignalProducer<Target, NSError>(value: target)
             .map { ($0.sampleData, nil) }
-            .delay(delay, onScheduler: QueueScheduler())
+            .delay(delay, onScheduler: stubScheduler)
     }
 }
 

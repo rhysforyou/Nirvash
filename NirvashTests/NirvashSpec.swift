@@ -11,6 +11,7 @@ import Foundation
 import Quick
 import Nimble
 import Nirvash
+import ReactiveCocoa
 
 class ReactiveAPISpec : QuickSpec {
     override func spec() {
@@ -21,19 +22,23 @@ class ReactiveAPISpec : QuickSpec {
                     let producer = stubbedProvider.request(.Root)
                         .map { data, _ in return data }
                     
-                    
                     expect(producer).toEventually(sendValue(Polls.Root.sampleData, sendError: nil, complete: true), timeout: 1)
                 }
                 
-                // TODO: Set up a manually controlled scheduler
-//                it("can stub after a delay") {
-//                    let testScheduler = Test
-//                    let stubbedProvider = APIProvider<Polls>(stubClosure: APIProvider.DelayedStub(1))
-//                    let producer = stubbedProvider.request(.Root)
-//                        .map { data, _ in return data }
-//                    
-//                    expect(producer).toEventually(sendValue(Polls.Root.sampleData, sendError: nil, complete: true), timeout: 3)
-//                }
+                it("can stub after a delay") {
+                    let testScheduler = TestScheduler()
+                    let stubbedProvider = APIProvider<Polls>(stubClosure: APIProvider.DelayedStub(5), stubScheduler: testScheduler)
+                    var data: NSData? = nil
+                    stubbedProvider.request(.Root)
+                        .startWithNext { responseData, _ in
+                            data = responseData
+                        }
+                    
+                    testScheduler.advanceByInterval(4)
+                    expect(data).to(beNil())
+                    testScheduler.advanceByInterval(1)
+                    expect(data).to(equal(Polls.Root.sampleData))
+                }
             }
         }
     }
