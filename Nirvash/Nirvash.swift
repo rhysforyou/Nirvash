@@ -136,19 +136,17 @@ public class APIProvider<Target : APITarget> {
     }
     
     public func stubRequest(target: Target) -> SignalProducer<(NSData, NSURLResponse?), NSError> {
-        var delay: NSTimeInterval
+        let producer: SignalProducer<(NSData, NSURLResponse?), NSError> = SignalProducer(value: target)
+            .map { ($0.sampleData, nil) }
+        
         switch stubClosure(target) {
         case .Never:
             fatalError("Tried to stub target that should never be stubbed")
         case .Immediately:
-            delay = 0
+            return producer
         case .Delayed(seconds: let seconds):
-            delay = NSTimeInterval(seconds)
+            return producer.delay(NSTimeInterval(seconds), onScheduler: stubScheduler)
         }
-        
-        return SignalProducer<Target, NSError>(value: target)
-            .map { ($0.sampleData, nil) }
-            .delay(delay, onScheduler: stubScheduler)
     }
 }
 

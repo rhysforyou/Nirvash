@@ -22,7 +22,7 @@ class ReactiveAPISpec : QuickSpec {
                     let producer = stubbedProvider.request(.Root)
                         .map { data, _ in return data }
                     
-                    expect(producer).toEventually(sendValue(Polls.Root.sampleData, sendError: nil, complete: true), timeout: 1)
+                    expect(producer).to(sendValue(Polls.Root.sampleData, sendError: nil, complete: true))
                 }
                 
                 it("can stub after a delay") {
