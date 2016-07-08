@@ -174,7 +174,7 @@ extension APIProvider {
         return .Immediately
     }
     
-    public class func DelayedStub(seconds: Int)(_: Target) -> Nirvash.StubbingBehaviour {
-        return .Delayed(seconds: seconds)
+    public class func DelayedStub(seconds: Int) -> (_: Target) -> Nirvash.StubbingBehaviour {
+        return { _ in .Delayed(seconds: seconds) }
     }
 }
