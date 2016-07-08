@@ -18,8 +18,8 @@ class ReactiveAPISpec : QuickSpec {
         describe("APIProvider") {
             describe("stubbing") {
                 it("can stub a request immediately") {
-                    let stubbedProvider = APIProvider<Polls>(stubClosure: APIProvider.ImmediatelyStub)
-                    let producer = stubbedProvider.request(.Root)
+                    let stubbedProvider = APIProvider(stubClosure: APIProvider.ImmediatelyStub)
+                    let producer = stubbedProvider.request(Polls.Root)
                         .map { data, _ in return data }
                     
                     expect(producer).to(sendValue(Polls.Root.sampleData, sendError: nil, complete: true))
@@ -27,9 +27,9 @@ class ReactiveAPISpec : QuickSpec {
                 
                 it("can stub after a delay") {
                     let testScheduler = TestScheduler()
-                    let stubbedProvider = APIProvider<Polls>(stubClosure: APIProvider.DelayedStub(5), stubScheduler: testScheduler)
+                    let stubbedProvider = APIProvider(stubClosure: APIProvider.DelayedStub(5), stubScheduler: testScheduler)
                     var data: NSData? = nil
-                    stubbedProvider.request(.Root)
+                    stubbedProvider.request(Polls.Root)
                         .startWithNext { responseData, _ in
                             data = responseData
                         }

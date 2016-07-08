@@ -77,7 +77,7 @@ public protocol APITarget {
     var sampleData: NSData { get }
 }
 
-public struct APIEndpoint<T> {
+public struct APIEndpoint {
     public let URL: String
     public let method: Nirvash.Method
     public let parameters: [String: AnyObject]?
@@ -92,10 +92,10 @@ public struct APIEndpoint<T> {
     }
 }
 
-public class APIProvider<Target : APITarget> {
-    public typealias EndpointClosure = (Target) -> (APIEndpoint<Target>)
-    public typealias RequestClosure = (endpoint: APIEndpoint<Target>) -> (NSURLRequest)
-    public typealias StubClosure = (Target) -> (Nirvash.StubbingBehaviour)
+public class APIProvider {
+    public typealias EndpointClosure = (APITarget) -> (APIEndpoint)
+    public typealias RequestClosure = (endpoint: APIEndpoint) -> (NSURLRequest)
+    public typealias StubClosure = (APITarget) -> (Nirvash.StubbingBehaviour)
     
     public let endpointClosure: EndpointClosure
     public let requestClosure: RequestClosure
@@ -114,7 +114,7 @@ public class APIProvider<Target : APITarget> {
     }
     
     @warn_unused_result(message="Did you forget to call `start` om the producer?")
-    public func request(target: Target) -> SignalProducer<(NSData, NSURLResponse?), NSError> {
+    public func request(target: APITarget) -> SignalProducer<(NSData, NSURLResponse?), NSError> {
         switch stubClosure(target) {
         case .Never:
             return sendRequest(target)
@@ -123,8 +123,8 @@ public class APIProvider<Target : APITarget> {
         }
     }
     
-    public func sendRequest(target: Target) -> SignalProducer<(NSData, NSURLResponse?), NSError> {
-        return SignalProducer<Target, NSError>(value: target)
+    public func sendRequest(target: APITarget) -> SignalProducer<(NSData, NSURLResponse?), NSError> {
+        return SignalProducer<APITarget, NSError>(value: target)
             .map(endpointClosure)
             .map(requestClosure)
             .flatMap(.Latest) { request in
@@ -135,7 +135,7 @@ public class APIProvider<Target : APITarget> {
             }
     }
     
-    public func stubRequest(target: Target) -> SignalProducer<(NSData, NSURLResponse?), NSError> {
+    public func stubRequest(target: APITarget) -> SignalProducer<(NSData, NSURLResponse?), NSError> {
         let producer: SignalProducer<(NSData, NSURLResponse?), NSError> = SignalProducer(value: target)
             .map { ($0.sampleData, nil) }
         
@@ -153,12 +153,12 @@ public class APIProvider<Target : APITarget> {
 // MARK: - Defaults
 
 extension APIProvider {
-    public class func DefaultEndpointMapping(target: Target) -> APIEndpoint<Target> {
+    public class func DefaultEndpointMapping(target: APITarget) -> APIEndpoint {
         let url = target.baseURL.URLByAppendingPathComponent(target.path).absoluteString
         return APIEndpoint(URL: url, method: target.method, parameters: target.parameters, parameterEncoding: Nirvash.ParameterEncoding.URL, httpHeaderFields: nil)
     }
     
-    public class func DefaultEndpointResolution(endpoint: APIEndpoint<Target>) -> NSURLRequest {
+    public class func DefaultEndpointResolution(endpoint: APIEndpoint) -> NSURLRequest {
         return endpoint.urlRequest
     }
 }
@@ -166,15 +166,15 @@ extension APIProvider {
 // MARK: - Stubbing
 
 extension APIProvider {
-    public class func NeverStub(_: Target) -> Nirvash.StubbingBehaviour {
+    public class func NeverStub(_: APITarget) -> Nirvash.StubbingBehaviour {
         return .Never
     }
     
-    public class func ImmediatelyStub(_: Target) -> Nirvash.StubbingBehaviour {
+    public class func ImmediatelyStub(_: APITarget) -> Nirvash.StubbingBehaviour {
         return .Immediately
     }
     
-    public class func DelayedStub(seconds: Int) -> (_: Target) -> Nirvash.StubbingBehaviour {
+    public class func DelayedStub(seconds: Int) -> (_: APITarget) -> Nirvash.StubbingBehaviour {
         return { _ in .Delayed(seconds: seconds) }
     }
 }
